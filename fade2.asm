@@ -1,6 +1,6 @@
 ; Fade from one image to another
 
-Fade2 proc near
+fADE2 proc near
 ; DS:SI^2 = target dactable, ES:DI^2 dest. dactable
   pusha
   mov cx, 768
@@ -27,7 +27,7 @@ fade_loop2:
   call SETPAL
   popa
   ret
-Fade2 endp
+fADE2 endp
 
 ; This fades only one step, to totally fade you need to call this 63 times.
 ; This is so you can combine it with other effects
